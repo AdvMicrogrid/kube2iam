@@ -18,6 +18,7 @@ GOLANGCI_LINT_DEADLINE ?= 180
 # useful for passing --build-arg http_proxy :)
 DOCKER_BUILD_FLAGS :=
 
+.PHONY: setup
 setup:
 	go get -v -u golang.org/x/tools/cmd/goimports
 	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $$(go env GOPATH)/bin v1.23.8

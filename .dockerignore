@@ -1,5 +1,4 @@
 .idea/
 build/
 vendor/
-Makefile
 build/bin/darwin
